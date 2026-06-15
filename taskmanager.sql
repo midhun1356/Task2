@@ -1,0 +1,25 @@
+CREATE DATABASE taskmanager;
+
+USE taskmanager;
+
+CREATE TABLE users(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+name VARCHAR(100),
+
+email VARCHAR(100),
+
+password VARCHAR(100)
+
+);
+
+CREATE TABLE tasks(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+title VARCHAR(255),
+
+status VARCHAR(50) DEFAULT 'Pending'
+
+);
